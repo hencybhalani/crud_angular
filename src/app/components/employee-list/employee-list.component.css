@@ -1,0 +1,70 @@
+
+.employee-list {
+    margin: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:nth-child(2) {
+    background-color: #FFA500; /* Orange for edit */
+  }
+  
+  button:nth-child(2):hover {
+    background-color: #FF8C00; /* Darker orange for edit */
+  }
+  
+  button:nth-child(3) {
+    background-color: #f44336; /* Red for delete */
+  }
+  
+  button:nth-child(3):hover {
+    background-color: #d32f2f; /* Darker red for delete */
+  }
+
+  .tools {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+    padding: 10px;
+    background-color: #f0f0f0; /* Light gray background color */
+    margin-bottom: 20px; /* Space below the tools section */
+  }
+  
+  #addEmpBtn {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  #addEmpBtn:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }

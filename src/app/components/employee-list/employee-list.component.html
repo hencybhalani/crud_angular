@@ -1,0 +1,32 @@
+<!-- (click)="addEmployee()" -->
+<div class="employee-list">
+    <div class="tools">
+      <button id="addEmpBtn" routerLink="/create-employee" >Add Employee</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>department</th>
+          <th>email</th>
+          <th>password</th>
+         <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let employee of employeeList">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.department }}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.password}}</td>
+          <td>
+            <button (click)="viewEmployee(employee)">View</button>
+            <button (click)="editEmployee(employee.id)" routerLink="employee/{{employee.id}}">Edit</button>
+            <button (click)="deleteEmployee(employee.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
